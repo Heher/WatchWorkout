@@ -1,0 +1,50 @@
+[
+  {
+  "suit": "Clubs",
+  "number": "A"
+  },
+  {
+  "suit": "Spades",
+  "number": "A"
+  },
+  {
+  "suit": "Diamonds",
+  "number": "A"
+  },
+  {
+  "suit": "Hearts",
+  "number": "A"
+  },
+  {
+  "suit": "Clubs",
+  "number": "2"
+  },
+  {
+  "suit": "Spades",
+  "number": "2"
+  },
+  {
+  "suit": "Diamonds",
+  "number": "2"
+  },
+  {
+  "suit": "Hearts",
+  "number": "2"
+  },
+  {
+  "suit": "Clubs",
+  "number": "3"
+  },
+  {
+  "suit": "Spades",
+  "number": "3"
+  },
+  {
+  "suit": "Diamonds",
+  "number": "3"
+  },
+  {
+  "suit": "Hearts",
+  "number": "3"
+  }
+]

@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Workout-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="Workout" id="AgC-eL-Hgc" customClass="WatchWorkoutInterfaceController" customModule="WorkoutWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="4XX-Uh-Bb1">
+                            <items>
+                                <group width="67" alignment="left" layout="vertical" id="vZo-hS-ne9">
+                                    <items>
+                                        <label alignment="center" text="Remain:" textAlignment="center" minimumScaleFactor="0.5" id="7N3-G6-ep0"/>
+                                        <label alignment="center" text="0" textAlignment="center" id="y8U-ks-ekb"/>
+                                    </items>
+                                </group>
+                                <group height="39" alignment="left" layout="vertical" spacing="0.0" id="YlH-zX-yRG">
+                                    <items>
+                                        <label width="1" alignment="center" text="A" textAlignment="center" id="X0D-bR-JEd"/>
+                                        <label width="1" alignment="center" text="Hearts" textAlignment="center" id="QIY-3V-qbL"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="New Card" id="cjQ-4x-9eN">
+                            <connections>
+                                <action selector="newCard:" destination="AgC-eL-Hgc" id="HyI-GN-6lW"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="0" textAlignment="center" id="CJu-PA-XB5"/>
+                    </items>
+                    <connections>
+                        <outlet property="indexLabel" destination="CJu-PA-XB5" id="8jY-aK-tGb"/>
+                        <outlet property="newCardButton" destination="cjQ-4x-9eN" id="JgB-f7-jqH"/>
+                        <outlet property="numberLabel" destination="X0D-bR-JEd" id="SfY-yU-oE1"/>
+                        <outlet property="remainingLabel" destination="y8U-ks-ekb" id="dEX-sL-y62"/>
+                        <outlet property="suitLabel" destination="QIY-3V-qbL" id="6ss-Ox-uUq"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="506" y="537"/>
         </scene>
     </scenes>
 </document>
